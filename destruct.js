@@ -13,11 +13,11 @@ const data = [
 
 console.log(data[0][1][3].string[1].value);
 
-
-const {value: value} = data[0][1][3].string[1]
+const [[_1,[_2,_3,_4,{string:[_5,{value}]}]]] = data 
 
 console.log(value)
 
+// const {value: value} = data[0][1][3].string[1]
 
 // // const colors = ["#000", "#fff", "#f00"]
 
