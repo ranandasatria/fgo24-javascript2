@@ -1,10 +1,8 @@
 const data = [
     ["data0", 
-        ["data1","data2","data3",
-            {
-     string: ["data4", 
-        {
-         value: "hello"
+        ["data0","data1","data2",
+            {string: ["data0", 
+        {value: "hello"
      }]
  }]]]
  
@@ -14,3 +12,31 @@ const data = [
  }
 
 console.log(data[0][1][3].string[1].value);
+
+
+const bio = {
+    name: "John O' Connor",
+    age: 30
+}
+
+const extraInfo = {
+    skills: ["Web Programming", "Painting"],
+    educations: [
+        {
+            name: "SMP 1 Denpasar",
+            year: 2012
+        }
+    ]
+}
+
+const profile = {
+    ...bio,
+    ...extraInfo,
+    skills: [...extraInfo.skills, "Hiking"],
+    educations: [...extraInfo.educations, {
+        name: "SMA 9 Denpasar",
+        year: 2015
+    }]
+}
+
+console.log(profile)
