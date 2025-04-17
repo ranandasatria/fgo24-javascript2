@@ -8,9 +8,9 @@ const data = [
      }]
  }]]]
  
- data[0][1][3].string[1].value = {
+ data[0][1][3].string[1] = {
     ...data[0][1][3].string[1],
-    value: "revisi"
+    value: "revisi",
  }
 
 console.log(data[0][1][3].string[1].value);
