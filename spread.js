@@ -14,6 +14,11 @@ const data = [
 console.log(data[0][1][3].string[1].value);
 
 
+const {value: value} = data[0][1][3].string[1]
+
+console.log(value)
+
+
 const bio = {
     name: "John O' Connor",
     age: 30
